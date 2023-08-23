@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/simpleWebPage.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webPageOnPirates</title>
+    <style>
+        h2{
+            font-size: larger;
+        }
+       *{
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+       }
+       body{
+         background-image:linear-gradient(to right, #570404,#333);
+         height: 100vh;
+         display:flex; 
+         justify-content: center;
+        align-items: center;
+       }
+       .container {
+         width:97%;
+         height:740px;
+         background-image:linear-gradient(to right,#570404ac 70%,#333333c2),url("https://th.bing.com/th/id/OIP.4l1fhwkcm8zU4ESRi5s1IQHaEo?pid=ImgDet&rs=1");
+
+       }
+       .container:hover{
+        background-image: linear-gradient(to right,#570404ac 60%, #33333373),url("https://th.bing.com/th/id/OIP.4l1fhwkcm8zU4ESRi5s1IQHaEo?pid=ImgDet&rs=1");
+
+       }
+       .hell{
+        font-size: 80px;
+        color:rgb(242, 232, 232);
+        padding-top: 140px;
+        padding-left: 60px;
+        
+       }
+
+       header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:10px;
+       }
+      a{
+        color:#fff;
+        text-decoration: none;
+      }
+      .logo{
+        font-size:30px;
+        text-transform: uppercase;
+      } 
+      ul{
+        width:60%;
+        list-style:none;
+        display:flex;
+        justify-content: space-evenly;
+
+      }
+      ul a:hoever{
+        border-bottom: 2px solid #fff;
+      }
+      .content{
+        width:50%;
+        margin-top:50px;
+        padding:50px;
+        color:#fff;
+      }
+      .content h2{
+        font-size:80px;
+        text-transform: uppercase;
+      }
+      .content p{
+        initial-letter: 2px;
+        width:420px;
+        padding:20px 0;
+
+      }
+      .content button{
+        font-size:30px;
+        padding:6px 10px;
+        border-radius: 10px;
+        border:none;
+      }
+      .content button:hover{
+        background-color:transparent;
+        border:2px solid #fff;
+        color:#fff;
+        cursor:pointer; 
+      }
+      .cheating{
+        color: #b4afaf;
+        font-size: 22px;
+        padding-left: 20px;
+      }
+      .www{
+         font-size: 30px;
+         position: relative;
+         left: 600px;
+         top:100px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <header>
+            <a href="http://127.0.0.1:5500/simpleWebPage.html#" class="logo">One piece</a>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/simpleWebPage.html#">HOME</a></li>
+                <li><a href="http://127.0.0.1:5500/simpleWebPage.html#">PIRATES</a></li>
+                <li><a href="http://127.0.0.1:5500/simpleWebPage.html#">VIDEOS</a></li>
+                <li><a href="http://127.0.0.1:5500/simpleWebPage.html#">PHOTOS</a></li>
+                <li><a href="http://127.0.0.1:5500/simpleWebPage.html#">ABOUT</a></li>
+                  
+                
+                
+            </ul>
+        </header>
+        <div class="CONTENT">
+            <h2 class="hell">One Piece</h2>
+            <p class="cheating">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem numquam earum reprehenderit modi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aspernatur enim, odio nihil voluptas minima libero ab assumenda amet autem quaerat velit harum similique quisquam, sit recusandae architecto deserunt dicta!</p>
+            <button class="www">Watch Now </button>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
